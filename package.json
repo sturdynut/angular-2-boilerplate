@@ -1,0 +1,52 @@
+{
+  "name": "angular-2-boilerplate",
+  "version": "1.0.0",
+  "description": "A starting point for angular 2 apps.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "typings": "typings",
+    "postinstall": "typings install",
+    "test": "live-server --open=unit-tests.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sturdynut/angular-2-boilerplate.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Matti Salokangas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sturdynut/angular-2-boilerplate/issues"
+  },
+  "homepage": "https://github.com/sturdynut/angular-2-boilerplate#readme",
+  "dependencies": {
+    "angular2": "2.0.0-beta.13",
+    "systemjs": "0.19.25",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.6.6"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "copy-webpack-plugin": "^1.1.1",
+    "jasmine-core": "2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-ie-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.8",
+    "karma-safari-launcher": "^0.1.1",
+    "lite-server": "^2.1.0",
+    "live-server": "1.0.0",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.11",
+    "webpack": "^1.12.14"
+  }
+}
